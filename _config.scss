@@ -1,0 +1,13 @@
+$primary-color: #fff;
+$battery-back: green;
+$flow-width: 200px;
+
+@mixin disp(){
+    border: 1px solid green;
+}
+
+@mixin phone{
+    @media (max-width: 768px){
+         @content;
+    }
+}

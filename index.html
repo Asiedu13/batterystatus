@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Status</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.scss">
+</head>
+<body>
+        <nav class="nav">
+            <h2 class="nav__logo">BatStatus</h2>
+            <ul class="nav__list">
+                <li>Home</li>
+                <li>Trials</li>
+                <li>FAQ</li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <section class="main__header">
+                <h1>Your Battery Status</h1>
+                <ul class="main__state">
+                    <li class="powerState"></li>
+                    <li class="chargerState"></li>
+                
+                </ul>
+            </section>
+
+            <section class="battery">
+                <div class="battery__con">
+                    <div class="battery__background">
+                        <div class="battery__bar"></div>
+                        <div class="battery__bar"></div>
+                        <div class="battery__bar"></div>
+                        <div class="battery__bar"></div>
+                    </div>
+                </div>
+                
+                <!-- Battery Description -->
+                <div class="battery__description">
+                    <h2 class="powerState"></h2>
+                    <h2 class="chargerState"></h2>
+                </div>
+
+            </section>
+        </main>
+    
+        <script src="index.js"></script>
+</body>
+</html>

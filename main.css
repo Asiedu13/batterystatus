@@ -1,0 +1,246 @@
+.main {
+  width: 100vw;
+  height: 60vh;
+}
+
+.main__header {
+  background: url("./battery2.jpeg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 60vh;
+}
+
+.main__header h1 {
+  width: 30vw;
+  height: 20vh;
+  font-size: 4rem;
+  position: relative;
+  padding: 5rem;
+}
+
+.main__state {
+  width: 30vw;
+  height: 40vh;
+}
+
+.main__state li {
+  list-style-type: none;
+  font-size: 2rem;
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100vw;
+    height: 60vh;
+  }
+  .main__header {
+    background: url("./battery2.jpeg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 60vh;
+  }
+  .main__header h1 {
+    width: 30vw;
+    height: 20vh;
+    font-size: 4rem;
+    position: relative;
+    padding: 5rem;
+  }
+  .main__state {
+    width: 30vw;
+    height: 40vh;
+  }
+  .main__state li {
+    list-style-type: none;
+    font-size: 2rem;
+    color: orange;
+    display: none;
+  }
+}
+
+.battery {
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+}
+
+.battery__con {
+  position: relative;
+  top: 10vh;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  border: 5px solid #1f67b9;
+  padding: 30px;
+  margin-right: 10vw;
+}
+
+.battery__con .battery__background {
+  width: 300px;
+  height: 380px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(38%, #1d238d), color-stop(39%, #1e2490), to(#00d4ff));
+  background: linear-gradient(to top, #020024 0%, #1d238d 38%, #1e2490 39%, #00d4ff 100%);
+}
+
+.battery__con .battery__background .battery__bar {
+  width: inherit;
+  height: calc(100% / 4);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #000;
+}
+
+.nav {
+  width: 100vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__logo {
+  padding: 10px;
+  margin-right: 40px;
+  color: #00ccff;
+}
+
+.nav__list {
+  width: 30vw;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+
+.nav__list li {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100vw;
+    height: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__logo {
+    padding: 10px;
+    margin-right: 40px;
+    color: #00ccff;
+  }
+  .nav__list {
+    width: 30vw;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #fff;
+    display: none;
+  }
+  .nav__list li {
+    color: red;
+    display: none;
+  }
+  .battery {
+    width: 100vw;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5vh;
+    color: #fff;
+  }
+  .battery__con {
+    position: relative;
+    top: 8vh;
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+    border: 5px solid #1f67b9;
+    padding: 30px;
+    margin-right: 10vw;
+  }
+  .battery__con .battery__background {
+    width: 200px;
+    height: 380px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(38%, #1d238d), color-stop(39%, #1e2490), to(#00d4ff));
+    background: linear-gradient(to top, #020024 0%, #1d238d 38%, #1e2490 39%, #00d4ff 100%);
+  }
+  .battery__con .battery__background .battery__bar {
+    width: inherit;
+    height: calc(100% / 4);
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+  .battery__description {
+    width: 300px;
+    position: relative;
+    right: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

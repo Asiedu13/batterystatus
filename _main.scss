@@ -1,0 +1,68 @@
+.main{
+    width: 100vw;
+    height: 60vh;
+
+    &__header{
+        background:url("./battery2.jpeg") no-repeat;
+        background-size: cover;
+        color: $primary-color;
+        height: 60vh;
+        
+        h1{
+            width: 30vw;
+            height: 20vh;
+            font-size: 4rem;
+            position: relative;
+            padding: 5rem;
+
+        }
+    }
+
+    &__state{
+        width: 30vw;
+        height: 40vh;
+        
+         li{
+             list-style-type: none;
+             font-size: 2rem;
+             color: orange;
+         }
+    }
+}
+
+@include phone{
+    .main{
+        width: 100vw;
+        height: 60vh;
+    
+        &__header{
+            background:url("./battery2.jpeg") no-repeat;
+            background-size: cover;
+            color: $primary-color;
+            height: 60vh;
+            
+            h1{
+                width: 30vw;
+                height: 20vh;
+                font-size: 4rem;
+                position: relative;
+                padding: 5rem;
+    
+            }
+        }
+    
+        &__state{
+            width: 30vw;
+            height: 40vh;
+            
+             li{
+                 list-style-type: none;
+                 font-size: 2rem;
+                 color: orange;
+                 display: none;
+             }
+        }
+    }
+    
+    
+}
