@@ -1,38 +1,77 @@
-.App {
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  height: 100px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center; }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 100; }
 
-.App-link {
-  color: #61dafb;
-}
+.main {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("pics/3571325.jpg") no-repeat;
+  background-size: cover;
+  flex-wrap: wrap; }
+  .main__battery {
+    width: 40%;
+    height: calc(70%); }
+    .main__battery__art svg {
+      width: 300px;
+      height: 400px;
+      padding: 2rem;
+      position: relative;
+      left: 100px;
+      fill: #fff;
+      border-radius: 10px;
+      transform: rotate(-90deg); }
+  .main__description {
+    width: 40%;
+    color: #fff;
+    padding: 1rem; }
+    .main__description__header {
+      padding: 1rem; }
+    .main__description__desc {
+      padding: 1rem;
+      flex-wrap: wrap; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.batdet {
+  width: 100vw;
+  height: 500px; }
+
+.about {
+  padding: 1rem; }
+  .about .founders {
+    display: flex;
+    justify-content: space-evenly; }
+    .about .founders .person {
+      width: 280px;
+      height: 300px;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: repeat(1fr, 2);
+      grid-template-rows: repeat(1fr, 2);
+      box-shadow: 3px 2px 21px 2px #d4d4d4; }
+      .about .founders .person img {
+        grid-area: span 1/2;
+        height: 150px;
+        width: inherit;
+        border-radius: 5px 5px 0 0; }
+      .about .founders .person__desc {
+        grid-area: 2/2;
+        padding: 1rem; }
+        .about .founders .person__desc__name {
+          font-size: 1.3rem; }
+        .about .founders .person__desc__position {
+          font-weight: 100; }
